@@ -1,29 +1,31 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
+import client from "../client";
 import Card from "../shared/Card";
 
 const DailyPicks = () => {
-  const principles = [
-    {
-      title: "Take bold risks, don't care.",
-      author: "Elon Musk",
-    },
-    {
-      title: "Take bold risks, don't care.",
-      author: "Elon Musk",
-    },
-    {
-      title: "Take bold risks, don't care.",
-      author: "Elon Musk",
-    },
-  ];
+  const [postData, setPostData] = useState([]);
+  useEffect(() => {
+    client
+      .fetch(
+        `*[_type=="dailypicks"]{
+      _id,
+      title,
+      description,
+      author,
+      tags
+    }`
+      )
+      .then((data) => setPostData(data))
+      .catch(console.error);
+  }, []);
 
   return (
     <>
       <h1 className="p-3 lg:py-3 text-2xl font-bold">Daily Picks</h1>
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-2 px-3 lg:px-0">
-        {principles.map(({ title, author }) => (
-          <Card>
-            <h1 className="font-bold text-xl leading-tight">{title}</h1>
+        {postData.map(({ author, description, _id }) => (
+          <Card key={_id}>
+            <h1 className="font-bold text-xl leading-tight">{description}</h1>
             <p className="font-medium mt-1">-{author}</p>
           </Card>
         ))}
