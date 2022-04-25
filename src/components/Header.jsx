@@ -1,11 +1,13 @@
 import React from "react";
+import { FaEnvelopeOpenText } from "react-icons/fa";
 
 const Header = () => {
   return (
     <div>
       {/* Nav Logo */}
-      <div className="flex justify-center p-4">
+      <div className="flex justify-between items-center   p-4">
         <h1 className="text-3xl font-bold">Principles.</h1>
+        <FaEnvelopeOpenText className="text-3xl" />
       </div>
       {/* Header Banner */}
       <div className="w-full my-2 px-3 lg:px-0">
