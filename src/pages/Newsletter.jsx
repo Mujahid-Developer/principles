@@ -84,9 +84,9 @@ const Newsletter = () => {
             <button className="text-white bg-slate-800 border-0 py-2 px-8 focus:outline-none hover:bg-slate-900 rounded text-lg">
               Subscribe
             </button>
-            <p className="text-xs text-gray-500 mt-3">
+            {/* <p className="text-xs text-gray-500 mt-3">
               Literally you probably haven't heard of them jean shorts.
-            </p>
+            </p> */}
           </form>
         </div>
       </section>
