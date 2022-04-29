@@ -1,12 +1,6 @@
-import React from "react";
-
 const Header = () => {
   return (
     <div>
-      {/* Nav Logo */}
-      <div className="flex justify-center p-4">
-        <h1 className="text-3xl font-bold">Principles.</h1>
-      </div>
       {/* Header Banner */}
       <div className="w-full my-2 px-3 lg:px-0">
         <div className="bg-white text-black min-h-[16rem] rounded-lg p-6  flex flex-col items-center justify-center">

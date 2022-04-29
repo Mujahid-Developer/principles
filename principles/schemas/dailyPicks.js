@@ -13,9 +13,24 @@ export default {
       type: "text",
     },
     {
+      title: "Image URL",
+      name: "imageUrl",
+      type: "url",
+    },
+    {
       name: "author",
       title: "Author",
       type: "string",
+    },
+    {
+      title: "Author ID URL",
+      name: "authorUrl",
+      type: "url",
+    },
+    {
+      title: "Derived From Url",
+      name: "derivedUrl",
+      type: "url",
     },
 
     {
