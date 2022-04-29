@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <NavBar />
       <Header />
-      <DailyPicks />
+      <DailyPicks className="h-[25rem]" />
       <Principles />
       <Footer />
     </div>

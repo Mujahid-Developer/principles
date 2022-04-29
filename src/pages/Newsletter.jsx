@@ -34,9 +34,9 @@ const Newsletter = () => {
       <NavBar />
       {/* Form Start here */}
       <section className="text-gray-400  body-font">
-        <div className="container px-5 py-24 mx-auto flex flex-wrap items-center">
+        <div className="container px-5 py-6 mx-auto flex flex-wrap items-center">
           <div className="lg:w-3/5 md:w-1/2 md:pr-16 lg:pr-0 pr-0">
-            <h1 className="title-font font-medium text-3xl text-white">
+            <h1 className="title-font font-medium text-2xl lg:text-3xl text-white">
               If you have less time or the amount of picks feels intimidating or
               hard to remember, I can send you one principle every day (based on
               my guess of what principle you might need today).
